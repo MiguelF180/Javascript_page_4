@@ -2,6 +2,9 @@ main label{
   display:block;
   text-align:center;
 }
+.result{
+  width:45%;
+}
 textarea{
   display:block;
   min-height:200px;
