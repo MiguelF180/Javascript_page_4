@@ -62,4 +62,10 @@ aside{
 .uno,.dos{
   width:100%;
 }
+.rect{
+  flex-direction:column;
+}
+.grafico{
+  width:100%;
+}
 }

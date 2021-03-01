@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/styles_phone.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/load.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="css/tabla.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/rectangulo.css" type="text/css" media="all" />
     <meta name="" content="">
     <title>Ejercicio Web Js</title>
   </head>
@@ -32,8 +32,8 @@
     <nav id="menu">
       <ul>
         <li><a href="index.html">Interes</a></li>
-        <li><a href="#">Tabla</a></li>
-        <li><a href="rectangulo.html">Rectangulo</a></li>
+        <li><a href="tabla.html">Tabla</a></li>
+        <li><a href="#">Rectagulo</a></li>
         <li><a href="#">Conversion USD</a></li>
         <li><a href="#">Conversion Km</a></li>
         <li><a href="#">Notas</a></li>
@@ -43,26 +43,22 @@
     
     
     
-     <main>
+   <main class="rect">
+     <div class="texto">
+       <h1 style="color:#ff81e0; padding-bottom:20px;">Calcular el area de un cuadrado</h1>
        
-       <div class="interes" style="width:45%">
-         
-       <label for="numero">Ingrese el numero base</label>
-       <input type="number" name="numero" id="numero"  />
+       <input type="number" name="ladoA" id="ladoA" placeholder="Escriba el lado A en cm"/>
+       <input type="number" name="ladoB" id="ladoB" placeholder="Escriba el lado B en cm" />
        
-       <label for="multiplicando">multiplicando</label>
-       <input type="number" name="multiplicando" id="multiplicando" />
-       
-       <button id="btn-tabla">Mostrar</button>
+       <button id="btn-rect">Calcular</button>
+     </div>
+     <div class="grafico">
+       <h2>Representacion</h2>
+       <div class="rectangulo" id="rectangulo">
+         <p id="rect_p"></p>
        </div>
-       
-       <div class="result">
-         <textarea name="" id="tabla" cols="30" rows="10" class="tabla"></textarea>
-       </div>
-       
-       
-     </main>
-    
+     </div>
+   </main> 
     
     
     
@@ -79,8 +75,8 @@
         <p class="p">Aqui escribí las funciones principales que me ayudaran al codigo en eventos y selectores a medida de mi proyecto</p>
       </div>
       <div class="dos">
-        <img class="imgcode"  src="image/tabla.jpg" alt="">
-        <p class="p">Aqui uso una de las funciones globales hechas por mi para facilitar el codigo, pero en resumen la funcion event() resive tres parámetros, el id del elemento html, el tipo de evento, y una funcion en este caso anonima y ahí ejecuto un for para la elaboracion de la tabla</p>
+        <img class="imgcode"  src="image/rectangulo.jpg" alt="">
+        <p class="p scroll">Aqui simplemente lo que hago es usar otra funcion anonima en donde calculo el area del rectangulo multiplicando sus dos lados y ademas hago una pequeña demostracion de medidas pero cuando los lados son muy grande muestro un cuadro de 450 x 450</p>
       </div>
     </aside>
     
@@ -91,6 +87,6 @@
     <script src="code/funciones.js" type="text/javascript" charset="utf-8"></script>
     <script src="code/load.js" type="text/javascript" charset="utf-8"></script>
     <script src="code/menu.js" type="text/javascript" charset="utf-8"></script>
-    <script src="code/tabla.js" type="text/javascript" charset="utf-8"></script>
+    <script src="code/react.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>
