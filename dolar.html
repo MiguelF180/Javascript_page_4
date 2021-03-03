@@ -8,8 +8,8 @@
 
   <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/styles_phone.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/dolar.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/load.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="css/rectangulo.css" type="text/css" media="all" />
     <meta name="" content="">
     <title>Ejercicio Web Js</title>
   </head>
@@ -43,25 +43,30 @@
     
     
     
-   <main class="rect">
-     <div class="texto">
-       <h1 style="color:#ff81e0; padding-bottom:20px;">Calcular el area de un cuadrado</h1>
-       
-       <input type="number" name="ladoA" id="ladoA" placeholder="Escriba el lado A en cm"/>
-       <input type="number" name="ladoB" id="ladoB" placeholder="Escriba el lado B en cm" />
-       
-       <button id="btn-rect">Calcular</button>
-     </div>
-     <div class="grafico">
-       <h2>Representacion</h2>
-       <div class="rectangulo" id="rectangulo">
-         <p id="rect_p"></p>
-       </div>
-     </div>
-   </main> 
     
     
-    
+    <main>
+      
+      <div id="modo" class="modo" cambio="true">
+        <i id="modousd" class="fas fa-money-check-alt dolar"></i>
+        <i id="modocop" class="fas fa-money-bill-alt cop"></i>
+      </div>
+     
+      <h1 id="usdTitle">Conversion USD</h1>
+      
+      <div>
+        <h3 id="usdSubtitle">Dolar</h3>
+        <i class="fas fa-dollar-sign"></i>
+        <input type="number" name="num1" id="num1" value="" />
+        
+        <button id="btn_dolar">Convertir</button>
+      </div>
+      <div class="result">
+        <h3 id="copSubtitle">COP</h3>
+        <i class="fas fa-dollar-sign colombia"></i>
+        <p id="result"></p>
+      </div>
+    </main>
     
     
     
@@ -87,6 +92,6 @@
     <script src="code/funciones.js" type="text/javascript" charset="utf-8"></script>
     <script src="code/load.js" type="text/javascript" charset="utf-8"></script>
     <script src="code/menu.js" type="text/javascript" charset="utf-8"></script>
-    <script src="code/react.js" type="text/javascript" charset="utf-8"></script>
+    <script src="code/dolar.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>
