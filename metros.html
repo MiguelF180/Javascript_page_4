@@ -8,13 +8,9 @@
 
   <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/styles_phone.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="css/dolar.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/load.css" type="text/css" media="all" />
     <meta name="" content="">
     <title>Ejercicio Web Js</title>
-    <style>
-      
-    </style>
   </head>
   <body class="load" id="load">
     <div class="der" id="der"></div>
@@ -45,31 +41,24 @@
     
     
     
-    
-    
-    
-    <main>
-      
-      <div id="modo" class="modo" cambio="true">
-        <i id="modousd" class="fas fa-money-check-alt dolar"></i>
-        <i id="modocop" class="fas fa-money-bill-alt cop"></i>
-      </div>
+   <main class="metros">
+     <h1 style="color:#de76ff">Convertidor de medidas</h1>
      
-      <h1 id="usdTitle">Conversion USD</h1>
-      
-      <div>
-        <h3 id="usdSubtitle">Dolar</h3>
-        <i class="fas fa-dollar-sign"></i>
-        <input type="number" name="num1" id="num1" value="" />
-        
-        <button id="btn_dolar">Convertir</button>
-      </div>
-      <div class="result">
-        <h3 id="copSubtitle">COP</h3>
-        <i class="fas fa-dollar-sign colombia"></i>
-        <p id="result"></p>
-      </div>
-    </main>
+     <div class="one">
+       
+     <label for="metros" style="padding:20px 3px; display:block; margin:auto;"><h1 style="fontSize:18px">Metros</h1></label>
+     <input type="number" name="metros" id="metros" value="" />
+     
+     <button id="btn_metros">Convertir</button>
+     
+     </div>
+     <div class="resultado" style="height:180px;">
+       <p id="resultado" ></p>
+       
+     </div>
+   </main> 
+    
+    
     
     
     
@@ -83,10 +72,8 @@
         <p class="p">Aqui escribí las funciones principales que me ayudaran al codigo en eventos y selectores a medida de mi proyecto</p>
       </div>
       <div class="dos">
-        <img class="imgcode"  src="image/1.jpg" alt="">
-        <img class="imgcode"  src="image/2.jpg" alt="">
-        <img class="imgcode"  src="image/3.jpg" alt="">
-        <p class="p scroll">Para resumir en la primera imagen es la declaración de variables en la segunda tengo un for donde pinto en el html las opciones de los select y mas debajo una funcion anonima dentro del un evento que hace los calculos, y por ultimo un evento para cambiar de dolar a pesos colombianos y viceversa</p>
+        <img class="imgcode"  src="image/metros.jpg" alt="">
+        <p class="p scroll">Simplemente lo que hice fue obtener el valor de el input y lo multiplique por 100</p>
       </div>
     </aside>
     
@@ -97,6 +84,6 @@
     <script src="code/funciones.js" type="text/javascript" charset="utf-8"></script>
     <script src="code/load.js" type="text/javascript" charset="utf-8"></script>
     <script src="code/menu.js" type="text/javascript" charset="utf-8"></script>
-    <script src="code/dolar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="code/metros.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>

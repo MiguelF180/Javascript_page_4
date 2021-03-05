@@ -184,3 +184,10 @@ footer{
 footer h3{
   color:white;
 }
+.metros{
+  display:flex;
+  flex-direction: column;
+}
+#resultado{
+  font-size:20px;
+}
